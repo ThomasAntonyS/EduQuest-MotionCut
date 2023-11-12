@@ -71,7 +71,7 @@ html {
 }
 
 body {
-  background: var(--white);
+  background: white;
 }
 
 .container {
@@ -171,6 +171,7 @@ body {
 
 .logo img {
   width: 100%;
+  background-color: transparent;
 }
 
 .menu-open-btn {
