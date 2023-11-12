@@ -21,6 +21,7 @@
     font-size: 1.8rem;
     font-weight: 600;
     position: relative;
+    text-align: center;
   }
   .container h2::after {
     content: "";
@@ -32,6 +33,7 @@
     height: 5px;
     background-color: var(--main-color);
     border-radius: 20px;
+    text-align: center;
   }
   .row {
     display: grid;
@@ -64,4 +66,8 @@
   .row .service h2 {
     font-weight: 600;
     margin-bottom: 20px;
+  }
+  #course-info{
+    text-align: center;
+    margin-top: -80px;
   }
