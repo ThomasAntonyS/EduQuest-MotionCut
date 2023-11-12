@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduQuest</title>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+
+        <a href="#" class="logo">
+          <img src="logo.png" alt="EduQuest logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="/about page/about.html" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="/service page/service.html" class="navbar-link">Service</a>
+          </li>
+
+          <li>
+            <a href="/contact page/contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <button class="btn btn-secondary" id="aboutBtn" onclick="NavAbout()">Get Started</button>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <article>
+
+
+      <section class="hero">
+        <div class="container">
+          <figure class="hero-banner">
+            <img src="bg.jpg" alt="A young lady sits, holding a pen and a notebook.">
+          </figure>
+
+          <div class="hero-content">
+            <h1 class="h1 hero-title">Start Your Future Education</h1>
+        
+            <p class="section-text">
+                Learning made Easy. Affordable. Convenient.
+            </p>
+            <button class="btn btn-primary" id="serviceBtn" onclick="NavService()">Know More</button>
+
+          </div>
+        </div>
+
+      </section>
+
+    <script>
+        function NavAbout(){
+            const aboutBtn = document.getElementById('aboutBtn')
+            aboutBtn.addEventListener('click',()=>{
+                window.location.href='/about page/about.html'
+            })
+        }
+
+        function NavService(){
+            const serviceBtn = document.getElementById('serviceBtn')
+            serviceBtn.addEventListener('click',()=>{
+                window.location.href='/service page/service.html'
+            })
+        }
+    </script>
+
+</body>
+
+</html>
